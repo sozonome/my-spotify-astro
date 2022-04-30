@@ -1,0 +1,4 @@
+{
+  "src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}": ["prettier --write"],
+  "src/**/*.{json,css,scss,md}": ["prettier --write"]
+}

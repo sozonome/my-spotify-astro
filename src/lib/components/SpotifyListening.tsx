@@ -25,9 +25,7 @@ const SpotifyListening = () => {
         <p className="font-heading font-extrabold text-size-sm">
           {data.trackTitle}
         </p>
-        <p className="font-sans text-size-xs text-gray-500">
-          {data.artist}
-        </p>
+        <p className="font-sans text-size-xs text-gray-500">{data.artist}</p>
       </div>
     </a>
   );
