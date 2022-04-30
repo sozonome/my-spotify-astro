@@ -13,6 +13,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@astrojs/netlify": "^0.3.3",
     "@astrojs/react": "^0.1.1",
     "@astrojs/tailwind": "^0.2.1",
     "@astrojs/vercel": "^0.1.4",
