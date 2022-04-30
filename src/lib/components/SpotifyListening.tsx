@@ -1,22 +1,12 @@
-import {
-  Box,
-  Flex,
-  Icon,
-  Image,
-  Link,
-  Skeleton,
-  Text,
-  Tooltip,
-} from "@chakra-ui/react";
-import { FaSpotify } from "react-icons/fa";
+import { FaSpotify } from 'react-icons/fa';
 
-import { useNowPlayingData } from "lib/services/spotify/user/now-playing";
+import { useNowPlayingData } from 'lib/services/spotify/user/now-playing';
 
 const SpotifyListening = () => {
   const { data, isLoading } = useNowPlayingData();
 
   if (isLoading) {
-    return <Skeleton maxWidth={300} height={20} borderRadius={12} />;
+    return <>Loading...</>;
   }
 
   if (!data || !data?.isPlaying) {
@@ -24,31 +14,22 @@ const SpotifyListening = () => {
   }
 
   return (
-    <Tooltip label="Song I'm currently listening to">
-      <Flex
-        as={Link}
-        href={data.trackUrl}
-        target="_blank"
-        fontFamily="Catamaran, sans-serif"
-        borderRadius={12}
-        maxWidth={300}
-        marginX="auto"
-        alignItems="center"
-        gridGap={2}
-        height={20}
-      >
-        <Icon as={FaSpotify} color="green.400" fontSize="2xl" />
-        <Image src={data.albumArtUrl} width={16} borderRadius={8} />
-        <Box>
-          <Text fontWeight="extrabold" fontSize="sm">
-            {data.trackTitle}
-          </Text>
-          <Text fontSize="xs" color="gray.500">
-            {data.artist}
-          </Text>
-        </Box>
-      </Flex>
-    </Tooltip>
+    <a
+      href={data.trackUrl}
+      className="flex rounded-xl mx-auto items-center gap-2 h-20"
+      target="_blank"
+    >
+      <FaSpotify className="text-green-400 text-size-2xl" />
+      <img src={data.albumArtUrl} className="w-16 rounded-md" />
+      <div>
+        <p className="font-heading font-extrabold text-size-sm">
+          {data.trackTitle}
+        </p>
+        <p className="font-sans text-size-xs text-gray-500">
+          {data.artist}
+        </p>
+      </div>
+    </a>
   );
 };
 
