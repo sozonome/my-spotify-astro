@@ -1,4 +1,4 @@
-import { FaSpotify } from 'react-icons/fa';
+// import { FaSpotify } from 'react-icons/fa';
 
 import { useNowPlayingData } from 'lib/services/spotify/user/now-playing';
 
@@ -19,7 +19,7 @@ const SpotifyListening = () => {
       className="flex rounded-xl mx-auto items-center gap-2 h-20"
       target="_blank"
     >
-      <FaSpotify className="text-green-400 text-size-2xl" />
+      {/* <FaSpotify className="text-green-400 text-size-2xl" /> */}
       <img src={data.albumArtUrl} className="w-16 rounded-md" />
       <div>
         <p className="font-heading font-extrabold text-size-sm">
