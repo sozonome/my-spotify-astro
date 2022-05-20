@@ -1,7 +1,7 @@
 import { getNowPlaying } from 'lib/services/spotify/user/now-playing';
 import type { GetNowPlayingTransformed } from 'lib/services/spotify/user/now-playing/types';
 
-export const get = async (_, request) => {
+export const get = async ({ _, request }) => {
   if (request.method !== 'GET') {
     return new Response(undefined, { status: 400 });
   }

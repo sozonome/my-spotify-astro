@@ -10,7 +10,7 @@ const SpotifyListening = () => {
   }
 
   if (!data || !data?.isPlaying) {
-    return null;
+    return <>Not Listening</>;
   }
 
   return (
