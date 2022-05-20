@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'Cal Sans';
+  src: url('https://cal.com/cal.ttf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cal Sans';
+  font-weight: normal;
+  letter-spacing: normal;
+}
+
+html {
+  font-family: 'Outfit', sans-serif;
+}
