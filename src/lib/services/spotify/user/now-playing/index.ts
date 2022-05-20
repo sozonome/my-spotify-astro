@@ -6,7 +6,7 @@ import type { GetNowPlayingResponse, GetNowPlayingTransformed } from './types';
 
 const SPOTIFY_NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
 
-export const getNowPlaying = async () => {
+export const getSpotifyNowPlaying = async () => {
   const { access_token: accessToken } = await getAccessToken();
 
   return fetcher<GetNowPlayingResponse>(SPOTIFY_NOW_PLAYING_ENDPOINT, {
@@ -16,5 +16,5 @@ export const getNowPlaying = async () => {
   });
 };
 
-export const useNowPlayingData = () =>
-  useSpotifySWR<GetNowPlayingTransformed>('/api/now-playing');
+export const useNowPlayingData = (fallbackData?: GetNowPlayingTransformed) =>
+  useSpotifySWR<GetNowPlayingTransformed>('/api/now-playing', fallbackData);

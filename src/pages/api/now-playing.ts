@@ -1,4 +1,4 @@
-import { getNowPlaying } from 'lib/services/spotify/user/now-playing';
+import { getSpotifyNowPlaying } from 'lib/services/spotify/user/now-playing';
 import type { GetNowPlayingTransformed } from 'lib/services/spotify/user/now-playing/types';
 
 export const get = async ({ _, request }) => {
@@ -7,7 +7,7 @@ export const get = async ({ _, request }) => {
   }
 
   try {
-    const response = await getNowPlaying();
+    const response = await getSpotifyNowPlaying();
 
     if (!response || !response.item) {
       return new Response(JSON.stringify({ isPlaying: false }), {
