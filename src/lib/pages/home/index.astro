@@ -1,11 +1,25 @@
 ---
-  import MainLayout from 'layouts/MainLayout.astro';
-  import SpotifyListening from 'lib/components/SpotifyListening';
-  import { getNowPlaying } from './api';
+import MainLayout from 'layouts/MainLayout.astro';
+import SpotifyListening from 'lib/components/SpotifyListening';
+import { getNowPlaying } from './api';
 
-  const nowPlaying = await getNowPlaying(Astro.request);
+const nowPlaying = await getNowPlaying(Astro.request);
 ---
 
 <MainLayout>
-  <SpotifyListening fallbackData={nowPlaying} client:load />
+  <div class="flex flex-col gap-8">
+    <div class="prose text-center ">
+      <h1 class="mb-0 text-green-700">My Spotify Listening</h1>
+    </div>
+    <SpotifyListening fallbackData={nowPlaying} client:load />
+
+    <div class="prose text-center mt-8">
+      <p class="text-xs">
+        {new Date().getFullYear()} - <a
+          href="https://sznm.dev"
+          target="_blank"
+          rel="noopener">sznm.dev</a>
+      </p>
+    </div>
+  </div>
 </MainLayout>

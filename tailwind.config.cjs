@@ -10,5 +10,5 @@ module.exports = {
       sans: ['"Outfit"', ...fontFamily.sans],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };

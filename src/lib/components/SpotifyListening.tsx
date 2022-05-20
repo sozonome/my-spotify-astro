@@ -15,7 +15,7 @@ const SpotifyListening = ({ fallbackData }: SpotifyListeningProps) => {
   }
 
   if (!data || !data?.isPlaying) {
-    return <>Not Listening</>;
+    return <p className="text-center text-gray-500">Not Listening</p>;
   }
 
   return (
