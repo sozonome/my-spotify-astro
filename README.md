@@ -5,4 +5,4 @@ Spotify API consumption demo for personal profile. Built using [Astro](https://a
 ### Deployment Notes
 
 - set environment variable:
-  - `ENABLE_FILE_SYSTEM_API=1`
+  - `ENABLE_VC_BUILD=1`
