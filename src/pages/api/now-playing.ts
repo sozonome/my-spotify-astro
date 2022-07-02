@@ -12,6 +12,9 @@ export const get = async ({ _, request }) => {
     if (!response || !response.item) {
       return new Response(JSON.stringify({ isPlaying: false }), {
         status: 200,
+        headers: {
+          'Content-Type': 'application/json',
+        },
       });
     }
 
@@ -26,10 +29,16 @@ export const get = async ({ _, request }) => {
 
     return new Response(JSON.stringify(data), {
       status: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
     });
   } catch {
     return new Response(JSON.stringify({ isPlaying: false }), {
       status: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
     });
   }
 };
