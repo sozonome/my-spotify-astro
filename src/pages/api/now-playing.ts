@@ -1,6 +1,11 @@
 import { getSpotifyNowPlaying } from 'lib/services/spotify/user/now-playing';
 import type { GetNowPlayingTransformed } from 'lib/services/spotify/user/now-playing/types';
 
+const defaultHeader: HeadersInit = {
+  'Content-Type': 'application/json',
+  'Cache-Control': 's-maxage=1, stale-while-revalidate=59',
+};
+
 export const get = async ({ _, request }) => {
   if (request.method !== 'GET') {
     return new Response(undefined, { status: 400 });
@@ -12,9 +17,7 @@ export const get = async ({ _, request }) => {
     if (!response || !response.item) {
       return new Response(JSON.stringify({ isPlaying: false }), {
         status: 200,
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: defaultHeader,
       });
     }
 
@@ -29,16 +32,12 @@ export const get = async ({ _, request }) => {
 
     return new Response(JSON.stringify(data), {
       status: 200,
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: defaultHeader,
     });
   } catch {
     return new Response(JSON.stringify({ isPlaying: false }), {
       status: 200,
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: defaultHeader,
     });
   }
 };
