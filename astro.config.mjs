@@ -7,4 +7,9 @@ import vercel from '@astrojs/vercel/edge';
 export default defineConfig({
   adapter: vercel(),
   integrations: [react(), tailwind()],
+  vite: {
+    ssr: {
+      noExternal: false,
+    }
+  }
 });
