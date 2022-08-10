@@ -7,7 +7,13 @@ type SpotifyListeningProps = {
   fallbackData?: GetNowPlayingTransformed;
 };
 
-const SpotifyListening = ({ fallbackData }: SpotifyListeningProps) => {
+/**
+ * @TODO
+ * - revert back to arrow function when this issue (https://github.com/withastro/astro/issues/4220) is resolved
+ */
+export default function SpotifyListening({
+  fallbackData,
+}: SpotifyListeningProps) {
   const { data, isLoading } = useNowPlayingData(fallbackData);
 
   if (isLoading) {
@@ -34,6 +40,4 @@ const SpotifyListening = ({ fallbackData }: SpotifyListeningProps) => {
       </div>
     </a>
   );
-};
-
-export default SpotifyListening;
+}
