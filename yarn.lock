@@ -9,11 +9,6 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@astrojs/compiler@^0.19.0":
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.19.0.tgz#ea25fea3ba59ce7734c2bcc65a5fd1e372329943"
-  integrity sha512-8nvyxZTfCXLyRmYfTttpJT6EPhfBRg0/q4J/Jj3/pNPLzp+vs05ZdktsY6QxAREaOMAnNEtSqcrB4S5DsXOfRg==
-
 "@astrojs/compiler@^0.23.3":
   version "0.23.3"
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.23.3.tgz#25af8efda9c92dbc8745341c3a2544caa4c689dc"
@@ -116,10 +111,10 @@
     node-fetch "^3.2.5"
     which-pm-runs "^1.1.0"
 
-"@astrojs/vercel@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/vercel/-/vercel-1.0.0.tgz#7e764190ac0cdff9723980e7ff5ab997667e15c4"
-  integrity sha512-Tu2KKaIaPu/3ru0e2l455ltY6SOCKXHNtE88ccEydVslrrQl8oeBXIgZY2e8ylVdzGCKmiYFcRudaAO3IYRMiA==
+"@astrojs/vercel@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/vercel/-/vercel-1.0.1.tgz#5b81025310978183845ad32675ae2fc2e724eb73"
+  integrity sha512-3OP8TvYbVBt9zkqmKAotQJ9OqhtcKbmEWvtAN04Knw4i+e/KFOrok83k+aNKFi99QFHBDQX7Ougu/3XIVHyEkg==
   dependencies:
     "@astrojs/webapi" "^1.0.0"
     "@vercel/nft" "^0.18.2"
@@ -665,10 +660,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.30.tgz#2c6e8512acac70815e8176aa30c38025067880ef"
   integrity sha512-oNBIZjIqyHYP8VCNAV9uEytXVeXG2oR0w9lgAXro20eugRQfY002qr3CUl6BAe+Yf/z3CRjPdz27Pu6WWtuSRw==
 
-"@types/node@^18.7.6":
-  version "18.7.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.6.tgz#31743bc5772b6ac223845e18c3fc26f042713c83"
-  integrity sha512-EdxgKRXgYsNITy5mjjXjVE/CS8YENSdhiagGrLqjG0pvA2owgJ6i4l7wy/PFZGC0B1/H20lWKN7ONVDNYDZm7A==
+"@types/node@^18.7.11":
+  version "18.7.11"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.11.tgz#486e72cfccde88da24e1f23ff1b7d8bfb64e6250"
+  integrity sha512-KZhFpSLlmK/sdocfSAjqPETTMd0ug6HIMIAwkwUpU79olnZdQtMxpQP+G1wDzCH7na+FltSIhbaZuKdwZ8RDrw==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -913,10 +908,10 @@ astral-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==
 
-astro@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-1.0.6.tgz#9978c31d7d8359f951a7800e737dddfdfdba2641"
-  integrity sha512-QAkdkzP3PbauiO4YnOgVTWY6z26heKruoXW9TnN8Bbmwtf7DUFIchi6CFSAVYSONX8XtRnj+p6fCkk06OWfJ4w==
+astro@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-1.0.8.tgz#a7b449698a4df1cafb63ec40c7224fe4bfb59e04"
+  integrity sha512-cWey5M/EjdgeZCRlOAB6YP05ui3U9ZfHPdb4r5HmumOE/1w8auDqRiHPpb2RCGYD7RpxOXcJu5XfJL4V2F1UpQ==
   dependencies:
     "@astrojs/compiler" "^0.23.3"
     "@astrojs/language-server" "^0.20.0"
@@ -970,7 +965,7 @@ astro@^1.0.6:
     tsconfig-resolver "^3.0.1"
     unist-util-visit "^4.1.0"
     vfile "^5.3.2"
-    vite "3.0.5"
+    vite "3.0.9"
     yargs-parser "^21.0.1"
     zod "^3.17.3"
 
@@ -2063,10 +2058,10 @@ fraction.js@^4.2.0:
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.2.0.tgz#448e5109a313a3527f5a3ab2119ec4cf0e0e2950"
   integrity sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==
 
-framer-motion@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-7.2.0.tgz#1abc8090e185eaac8a3b3729e2529154d2edcb17"
-  integrity sha512-D24ZHtbtdpiaByamNYiVXafVU6JfBxjrVlR1beyNupJL80haaDE23xS4dR0b/Qb64frtw/Mpdd9VYwSCv+UtSw==
+framer-motion@^7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-7.2.1.tgz#0db5992ece791cb58357787ef9c29dd76281720d"
+  integrity sha512-bt2ZqqGpPsW6UojYUa5poWQJu3sDr4Dp3IZsdVBYdKUJ8p+9PxOk1fYRAT8lTGGmaC5HFoKrbDXQeKWGAKZz9g==
   dependencies:
     "@motionone/dom" "10.13.1"
     framesync "6.1.2"
@@ -3915,12 +3910,12 @@ preferred-pm@^3.0.3:
     path-exists "^4.0.0"
     which-pm "2.0.0"
 
-prettier-plugin-astro@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.5.0.tgz#d1971c1b7fa02722bf0aaf5ae3621491f4429e0e"
-  integrity sha512-wBDZs0hlPWQDc7P7VmGe8pImci6F434Wd/otfLJwvCSXRb9J7AhmAigXhm5WPgCJuBA509Ovo/Ed+LAgZy4KWg==
+prettier-plugin-astro@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.5.3.tgz#6e2f21979ab1bd905f63a816b829aeb2a3698927"
+  integrity sha512-g4uJ/7k1rJeIWBifeBgTqzgV5gmMTG+lOmOvUZvtIh1R91aqa+yYMzbysIlsJKRaRyWefejrOpvpIuEePBDAyw==
   dependencies:
-    "@astrojs/compiler" "^0.19.0"
+    "@astrojs/compiler" "^0.23.3"
     prettier "^2.7.1"
     sass-formatter "^0.7.2"
     synckit "^0.7.0"
@@ -4243,6 +4238,13 @@ rollup-pluginutils@^2.8.2:
   integrity sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==
   dependencies:
     estree-walker "^0.6.1"
+
+"rollup@>=2.75.6 <2.77.0 || ~2.77.0":
+  version "2.77.3"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.77.3.tgz#8f00418d3a2740036e15deb653bed1a90ee0cc12"
+  integrity sha512-/qxNTG7FbmefJWoeeYJFbHehJ2HNWnjkAFRKzWN/45eNBBF/r8lo992CwcJXEzyVxs5FmfId+vTSTQDb+bxA+g==
+  optionalDependencies:
+    fsevents "~2.3.2"
 
 rollup@^2.75.6:
   version "2.77.0"
@@ -4984,15 +4986,15 @@ vfile@^5.3.2:
     unist-util-stringify-position "^3.0.0"
     vfile-message "^3.0.0"
 
-vite@3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-3.0.5.tgz#56b8d52e00bbbd5f21d02f0868dc613b3246ecc6"
-  integrity sha512-bRvrt9Tw8EGW4jj64aYFTnVg134E8hgDxyl/eEHnxiGqYk7/pTPss6CWlurqPOUzqvEoZkZ58Ws+Iu8MB87iMA==
+vite@3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-3.0.9.tgz#45fac22c2a5290a970f23d66c1aef56a04be8a30"
+  integrity sha512-waYABTM+G6DBTCpYAxvevpG50UOlZuynR0ckTK5PawNVt7ebX6X7wNXHaGIO6wYYFXSM7/WcuFuO2QzhBB6aMw==
   dependencies:
     esbuild "^0.14.47"
     postcss "^8.4.16"
     resolve "^1.22.1"
-    rollup "^2.75.6"
+    rollup ">=2.75.6 <2.77.0 || ~2.77.0"
   optionalDependencies:
     fsevents "~2.3.2"
 
