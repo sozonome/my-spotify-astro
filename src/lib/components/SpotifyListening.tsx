@@ -1,7 +1,7 @@
 // import { FaSpotify } from 'react-icons/fa';
 
 import { useNowPlayingData } from 'lib/services/spotify/user/now-playing';
-import { GetNowPlayingTransformed } from 'lib/services/spotify/user/now-playing/types';
+import { type GetNowPlayingTransformed } from 'lib/services/spotify/user/now-playing/types';
 
 type SpotifyListeningProps = {
   fallbackData?: GetNowPlayingTransformed;

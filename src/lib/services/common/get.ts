@@ -10,7 +10,7 @@ export const get = async <T>(
   });
   if (!response.ok) {
     // TODO make this better...
-    return null;
+    return undefined;
   }
   return cb(response);
 };

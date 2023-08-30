@@ -6,7 +6,7 @@ const defaultHeader: HeadersInit = {
   'Cache-Control': 's-maxage=1, stale-while-revalidate=59',
 };
 
-export const get = async ({ _, request }) => {
+export const GET = async ({ _, request }: any) => {
   if (request.method !== 'GET') {
     return new Response(undefined, { status: 400 });
   }

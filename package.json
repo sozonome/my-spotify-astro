@@ -8,29 +8,29 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "format": "yarn prettier -w src",
-    "up": "yarn upgrade-interactive",
-    "up-latest": "yarn up --latest",
+    "format": "pnpm prettier -w src",
+    "up-interactive": "pnpm up -i",
+    "up-latest": "pnpm up-interactive -L",
     "prepare": "husky install",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^2.0.2",
-    "@astrojs/tailwind": "^3.0.1",
-    "@astrojs/vercel": "^3.1.1",
+    "@astrojs/react": "^3.0.0",
+    "@astrojs/tailwind": "^5.0.0",
+    "@astrojs/vercel": "^4.0.0",
     "@tailwindcss/typography": "^0.5.9",
-    "astro": "^2.0.10",
+    "astro": "^3.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "swr": "^2.0.3",
-    "tailwindcss": "^3.2.6"
+    "swr": "^2.2.2",
+    "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
-    "@types/node": "^18.13.0",
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
+    "@types/node": "^20.5.7",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
     "husky": "^8.0.3",
-    "lint-staged": "^13.1.1",
-    "prettier-plugin-astro": "^0.8.0"
+    "lint-staged": "^14.0.1",
+    "prettier-plugin-astro": "^0.12.0"
   }
 }

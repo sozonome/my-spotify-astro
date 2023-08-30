@@ -1,5 +1,5 @@
 import { get } from 'lib/services/common/get';
-import { GetNowPlayingTransformed } from 'lib/services/spotify/user/now-playing/types';
+import { type GetNowPlayingTransformed } from 'lib/services/spotify/user/now-playing/types';
 
 export const getNowPlaying = (incomingReq: Request) =>
   get<GetNowPlayingTransformed>(
