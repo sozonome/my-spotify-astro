@@ -1,18 +1,18 @@
 // import { FaSpotify } from 'react-icons/fa';
 
-import { useNowPlayingData } from 'lib/services/spotify/user/now-playing';
+// import { useNowPlayingData } from 'lib/services/spotify/user/now-playing';
 import { type GetNowPlayingTransformed } from 'lib/services/spotify/user/now-playing/types';
 
 type SpotifyListeningProps = {
-  fallbackData?: GetNowPlayingTransformed;
+  fallbackData: GetNowPlayingTransformed;
 };
 
-const SpotifyListening = ({ fallbackData }: SpotifyListeningProps) => {
-  const { data, isLoading } = useNowPlayingData(fallbackData);
+const SpotifyListening = ({ fallbackData: data }: SpotifyListeningProps) => {
+  // const { data, isLoading } = useNowPlayingData(fallbackData);
 
-  if (isLoading) {
-    return <>Loading...</>;
-  }
+  // if (isLoading) {
+  //   return <>Loading...</>;
+  // }
 
   if (!data || !data?.isPlaying) {
     return <p className="text-center text-gray-500">Not Listening</p>;
